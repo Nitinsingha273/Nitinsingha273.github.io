@@ -21,29 +21,52 @@
 .App-link {
   color: #61dafb;
 }
+#comment
+{
+  color: black;
+  font-size: small;
+}
 #codebtn{
+  border: 10px solid white;
   background-color: white;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   
+}
+#yellow
+{
+  color:#FFBD59;
+
+
+}
+#mobile{
+  border:10px solid white;
+  background-color: white;
+  width: 240px;
+
+  
+  
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 
-div.inputBox {
+/* div.inputBox {
   border: 0px solid rgb(151, 114, 114);
   background-color: white;
   color:black;
   font-size: small;
   border-radius: 30px;
- padding:4px;
+ padding:8px;
   width: 300px;
-}
+} */
 div.continueButton {
-  border: 2px solid black;
+  border: 2px solid #FFBD59;
   border-radius: 28px;
   padding: 9px;
   text-align:center;
   background-color:#FFBD59;
+  font-size:small;
   width: 300px;
   margin-top: 18px;
 }
