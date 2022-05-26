@@ -12,7 +12,7 @@ function Signup() {
 
         {!isClicked&&<React.Fragment>
       <div className='inputBox'>
-      <span>+91</span>
+          <button id="codebtn">+91</button>
         <input type="text" maxLength="10" id="mobile" placeholder="Enter Mobile Number"></input>
       </div>
       <div className="continueButton" onClick={()=>{
@@ -35,8 +35,11 @@ function Signup() {
         }}>Continue</div></React.Fragment>}
 
         {isClicked&&<React.Fragment>
+          
           <Login/>
-      </React.Fragment>}
+         
+          {Login}
+        </React.Fragment>}
             
     </header>
   </div>
