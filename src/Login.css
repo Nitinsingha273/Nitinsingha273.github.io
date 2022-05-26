@@ -20,6 +20,7 @@
 {
     text-align: center;
     position: relative;
+    color: black;
 }
 #input-field{ 
     margin-left: 30px;
@@ -46,7 +47,7 @@
     margin:0;
     padding: 0;
     height: 1000hv;
-    background: #e0e2e7cf;;
+    background: transparent;
     
 }
 .contianer2{
@@ -66,6 +67,7 @@ div.continueB{
     padding: 9px;
     text-align:center;
     justify-content:center ;
+    margin: 30px;
     
     
     background-color:#FFBD59;
