@@ -1,28 +1,20 @@
-import React from "react"; 
-
-import { Routes, Route } from 'react-router-dom';
-
-
-// import './App.css';
-import Signup from "./Signup";
-import Login from "./Login";
+import {Routes,Route} from 'react-router-dom';
+import './App.css';
+import Signup from './Signup.js';
+import OTP from './OTP.js';
+import LAST from './LAST.js';
 
 function App() {
   return (
-   <>
+    <>
     <Routes>
-
-    
-    
-    <Route path="/" element={<Signup/>}/>
-    <Route   path='/login' element={<Login/>} />
-    <Route  path='/Login' component={Login} />
-   
-
+      <Route path="/" element={<Signup/>}/>
+     <Route exact path ="/otp" element={<OTP/>}/>
+      
+      <Route path ='/last' element={<LAST/>}/>
     </Routes>
-
-
     </>
+    
   );
 }
 

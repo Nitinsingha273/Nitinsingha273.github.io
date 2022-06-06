@@ -1,30 +1,29 @@
-import React from "react";
-import "./Login.css";
-import "./Login.js";
-import { useLinkClickHandler } from "react-router-dom";
+
+import './OTP.css';
 
 
-function Login(){
-    function clickhandler()
-    {
-        alert("You are sucessfully logged In")
-    }
-    return (
-        <body id='body1'>
-       
-           <b><p id="G">   OTP </p></b> 
-           <b><p id="H">   Verification </p></b> 
-           <p id="I">OTP has been sent to +91 {}</p>
-        
-        
-        <div className="container2">
-            <span>
+
+
+function OTP() {
+ 
+ 
+  return (
+    <section className='App'>
+      <div className="container">
+        <header className="header">
+          <h1 className="heading">
+            OTP <br />
+            Verification
+          </h1>
+          <p className="message">OTP has been sent to +91 </p>
+        </header>
+        <div>
+        <form >
+        <span>
            <input
            maxLength={1}
            type="text"
            id="input-field"
-           
-           
            />
             <input
            maxLength={1}
@@ -52,12 +51,19 @@ function Login(){
            id="input-field"
            />
            </span>
-
+           <div>
+            <button type="submit" className="button"  >
+              Continue
+            </button>
+            </div>
+          </form>
         </div>
-        <div className="continueB " onClick={clickhandler}>Continue</div>
+      
+        </div>
 
-        </body>
 
-    );
+    </section>
+  );
 }
-export default Login;
+
+export default OTP;
